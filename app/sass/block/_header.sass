@@ -1,0 +1,292 @@
+.header__top
+	display: flex
+	background-color: #333
+	min-height: 45px
+
+.header__top-wrapper
+	display: flex
+	justify-content: flex-end
+	min-height: 100%
+
+.currency
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 115px
+	position: relative
+	margin-right: 20px
+
+.currency:after
+	content: ""
+	display: block
+	width: 5px
+	height: 5px
+	border-bottom: 2px solid #777
+	border-left: 2px solid #777
+	position: absolute
+	top: calc(50% - 4px)
+	right: 0
+	transform: rotate(-45deg)
+	z-index: 9
+
+.currency-desription
+	font-family: "Montserrat-Regular", Arial, sans-serif
+	font-size: 13px
+	color: #777
+
+.currency-select
+	padding: 5px
+	padding-right: 17px
+	background-color: transparent
+	font-family: "Montserrat-Regular", Arial, sans-serif
+	font-size: 13px
+	color: #777
+	border: 0
+	outline: 0
+	appearance: none
+	-webkit-appearance: none
+	-moz-appearance: none
+	cursor: pointer
+	position: relative
+	z-index: 99
+
+.header__top-search
+	margin-right: auto
+
+.search
+	padding-left: 10px
+	width: 250px
+	height: 100%
+	border: 0
+	background-color: transparent
+	outline: 0
+	transition: all .2s
+
+.search:focus
+	background-color: #00c8c8
+	color: white
+
+.search:focus.search::placeholder
+	color: white
+
+.authorization
+	display: flex
+	justify-content: center
+
+.authorization__item
+	display: block
+	font-family: "Montserrat-Regular", Arial, sans-serif
+	font-size: 13px
+	color: #777
+	padding: 10px 25px
+	text-decoration: none
+	text-align: center
+	line-height: 24px
+	transition: all .2s
+
+.authorization__item:hover
+	color: white
+	background-color: #00c8c8
+
+.basket
+	position: relative
+	padding-right: 45px
+
+.basket:before
+	font-size: 15px
+	margin-right: 20px
+
+.basket:after
+	content: ""
+	width: 5px
+	height: 5px
+	border-bottom: 2px solid #777
+	border-left: 2px solid #777
+	transform: rotate(-45deg)
+	position: absolute
+	top: calc(50% - 5px)
+	right: 25px
+	transition: all .2s
+
+.basket:hover:after
+	border-color: white
+
+.header__bot
+	position: relative
+	z-index: 9
+
+.header__bot-wrapper
+	display: flex
+	align-items: center
+	padding-top: 40px
+	position: relative
+	z-index: 99
+
+.header__bot-wrapper:after
+	content: ""
+	width: 100%
+	height: 2px
+	background-color: #eee
+	position: absolute
+	bottom: -1080px
+
+.logo
+	display: block
+	max-width: 222px
+	padding-bottom: 10px
+	margin-right: auto
+	font-family: "Montserrat-Regular", Arial, sans-serif
+	font-size: 24px
+	text-transform: uppercase
+	text-decoration: none
+	color: black
+	position: relative
+	transition: all .2s
+
+.logo:after
+	content: ""
+	width: 0
+	height: 2px
+	background-color: black
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 4px
+	margin: 0 auto
+	transition: all .3s
+
+.logo:hover
+	transform: scale(1.1,1.1)
+
+.logo:hover:after
+	width: 100%
+
+.logo_text-bold
+	font-family: "Montserrat-Bold", Arial, sans-serif
+
+.menu
+	display: flex
+	list-style-type: none
+
+.menu__item
+	font-family: "Montserrat-Regular", Arial, sans-serif
+	font-size: 13px
+	position: relative
+
+.menu__item:hover > .sub-menu
+	width: 465px
+	height: auto
+	transform: scale(1)
+
+.menu__item:hover > .sub-menu .sub-menu__item
+	transform: scale(1)
+
+.menu__item:hover > .sub-menu .sub-menu__banner
+	transform: scale(1)
+
+.link
+	display: block
+	padding: 10px 20px
+	padding-bottom: 15px
+	text-decoration: none
+	text-transform: uppercase
+	color: black
+
+.link:hover
+	color: #00c8c8
+
+.link__arrow:after
+	content: ""
+	display: block
+	width: 5px
+	height: 5px
+	border-bottom: 2px solid #989898
+	border-left: 2px solid #989898
+	position: absolute
+	bottom: 2px
+	left: 23px
+	transform: rotate(-45deg)
+
+.link__arrow:hover:after
+	border-bottom: 2px solid #00c8c8
+	border-left: 2px solid #00c8c8
+
+.sub-menu
+	display: flex
+	flex-wrap: wrap
+	width: 0
+	height: auto
+	padding: 30px
+	box-shadow: 0 15px 30px rgba(0,0,0,.1)
+	background-color: white
+	list-style-type: none
+	position: absolute
+	top: 41px
+	transform: scale(0)
+	transition: all .3s
+
+.sub-menu__mens
+	left: 20px
+	transform-origin: left top
+
+.sub-menu__womens
+	left: -60px
+	transform-origin: right top
+
+.sub-menu__local-stores
+	left: auto
+	right: -40px
+	transform-origin: center top
+
+.sub-menu__look-book
+	left: auto
+	right: 0
+	transform-origin: right top
+
+.sub-menu__item
+	width: 48%
+	padding-right: 2%
+	margin-bottom: 20px
+	transform: scale(0)
+	transform-origin: center
+	transition: all .5s
+
+.sub-menu__item-list
+	width: 100%
+	list-style-type: none
+
+.sub-menu__banner
+	width: 100%
+	padding: 65px
+	margin-top: 30px
+	background-color: #333
+	transform: scale(0)
+	transform-origin: center
+	transition: all .5s
+
+.banner__content
+	font-family: "Montserrat-Regular", Arial, sans-serif
+	font-size: 36px
+	color: white
+	text-transform: uppercase
+	text-align: center
+
+.banner__text
+	font-family: "Montserrat-Bold", Arial, sans-serif	
+
+.link__item-list
+	display: inline-block
+	padding-left: 0
+	padding-right: 0
+	font-family: "Montserrat-Light", Arial, sans-serif
+	font-size: 13px
+	color: #575153
+	text-transform: none
+
+.link__item-list-title
+	font-family: "Montserrat-Regular", Arial, sans-serif
+	color: #575153
+	text-transform: uppercase
+
+
+
