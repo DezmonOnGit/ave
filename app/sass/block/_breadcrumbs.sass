@@ -1,0 +1,13 @@
+.breadcrumbs
+	display: flex
+	justify-content: center
+	list-style-type: none
+
+.breadcrumbs__item:first-child > .link__breadcrumbs
+	margin-left: 0
+
+.breadcrumbs__item:last-child > .link__breadcrumbs
+	margin-right: 0
+
+.breadcrumbs__item:last-child > .link__breadcrumbs:after
+	display: none

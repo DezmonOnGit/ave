@@ -122,14 +122,6 @@
 	position: relative
 	z-index: 99
 
-.header__bot-wrapper:after
-	content: ""
-	width: 100%
-	height: 2px
-	background-color: #eee
-	position: absolute
-	bottom: -1080px
-
 .logo
 	display: block
 	max-width: 222px
@@ -180,38 +172,11 @@
 
 .menu__item:hover > .sub-menu .sub-menu__item
 	transform: scale(1)
-	transition: all .6s
+	transition: all .8s
 
 .menu__item:hover > .sub-menu .sub-menu__banner
 	transform: scale(1)
-	transition: all .6s
-
-.link
-	display: block
-	padding: 10px 20px
-	padding-bottom: 15px
-	text-decoration: none
-	text-transform: uppercase
-	color: black
-
-.link:hover
-	color: #00c8c8
-
-.link__arrow:after
-	content: ""
-	display: block
-	width: 5px
-	height: 5px
-	border-bottom: 2px solid #989898
-	border-left: 2px solid #989898
-	position: absolute
-	bottom: 2px
-	left: 23px
-	transform: rotate(-45deg)
-
-.link__arrow:hover:after
-	border-bottom: 2px solid #00c8c8
-	border-left: 2px solid #00c8c8
+	transition: all .8s
 
 .sub-menu
 	display: flex
@@ -251,7 +216,7 @@
 	margin-bottom: 20px
 	transform: scale(0)
 	transform-origin: center
-	transition: all .3s
+	transition: all .2s
 
 .sub-menu__item-list
 	width: 100%
@@ -259,12 +224,14 @@
 
 .sub-menu__banner
 	width: 100%
-	padding: 65px
 	margin-top: 30px
-	background-color: #333
 	transform: scale(0)
 	transform-origin: center
-	transition: all .3s
+	transition: all .2s
+
+.banner
+	padding: 65px
+	background-color: #333
 
 .banner__content
 	font-family: "Montserrat-Regular", Arial, sans-serif
@@ -276,19 +243,6 @@
 .banner__text
 	font-family: "Montserrat-Bold", Arial, sans-serif	
 
-.link__item-list
-	display: inline-block
-	padding-left: 0
-	padding-right: 0
-	font-family: "Montserrat-Light", Arial, sans-serif
-	font-size: 13px
-	color: #575153
-	text-transform: none
-
-.link__item-list-title
-	font-family: "Montserrat-Regular", Arial, sans-serif
-	color: #575153
-	text-transform: uppercase
 
 
 

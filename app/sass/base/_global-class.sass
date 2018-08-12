@@ -10,10 +10,10 @@ ul
 	padding: 0 15px
 	margin: 0 auto
 
+// ---Button begin---
+
 .btn
 	text-decoration: none
-
-.btn__slider
 	padding: 20px 30px
 	border: 2px solid #737373
 	box-sizing: border-box
@@ -21,12 +21,195 @@ ul
 	color: #454647
 	font-family: "Montserrat-Regular", Arial, sans-serif
 	font-size: 16px
+	transition: all .2s
+
+.btn__slider
 	position: absolute
 	bottom: 15%
 	right: 25%
-	transition: all .2s
 
-.btn__slider:hover
+.btn:hover
 	background-color: #00c8c8
 	color: white
 	border-color: #00c8c8
+
+.btn__info
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 30px
+	height: 30px
+	padding: 0
+	background-color: #727272
+	border-radius: 50%
+	color: white
+	cursor: pointer
+
+.btn__info-lookbook
+	background-color: white
+	color: black
+	border: 0
+
+.btn__info:before
+	margin: 0
+	font-size: 15px
+
+.btn__info:hover
+	background-color: #00c8c8
+
+.btn__locations
+	display: block
+	width: 218px
+	text-align: center
+
+
+// ---Button end---
+
+// ---Link begin---
+
+.link
+	display: block
+	padding: 10px 20px
+	padding-bottom: 15px
+	text-decoration: none
+	text-transform: uppercase
+	color: black
+	transition: all .2s
+
+.link:hover
+	color: #00c8c8
+
+.link__arrow:after
+	content: ""
+	display: block
+	width: 5px
+	height: 5px
+	border-bottom: 2px solid #989898
+	border-left: 2px solid #989898
+	position: absolute
+	bottom: 2px
+	left: 23px
+	transform: rotate(-45deg)
+
+.link__arrow:hover:after
+	border-bottom: 2px solid #00c8c8
+	border-left: 2px solid #00c8c8
+
+.link__item-list
+	display: inline-block
+	padding-left: 0
+	padding-right: 0
+	font-family: "Montserrat-Light", Arial, sans-serif
+	font-size: 13px
+	color: #575153
+	text-transform: none
+
+.link__item-list-title
+	font-family: "Montserrat-Regular", Arial, sans-serif
+	color: #575153
+	text-transform: uppercase
+
+.link__goods-nav
+	padding: 15px 26px
+	font-family: "Montserrat-Regular", Arial, sans-serif
+	font-size: 13px
+	color: #727272
+
+.link__footer-title
+	margin-bottom: 15px
+
+.link__footer
+	padding: 8px 0
+
+.link__list-banner
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 36px
+	color: white
+	box-sizing: border-box
+	position: relative
+	transition: all .3s
+
+.link__list-banner:before
+	margin: 0
+
+.link__list-banner:after
+	content: ""
+	display: block
+	width: 0
+	height: 2px
+	background-color: white
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	transition: all .3s
+
+.link__list-banner:hover
+	color: white
+	transform: scale(1.1)
+
+.link__list-banner:hover:after
+	width: 100%
+
+.link__content
+	display: inline-block
+	padding: 0
+	text-transform: none
+	color: #00c8c8
+	position: relative
+	transition: all .2s
+
+.link__content:hover
+	transform: scale(1.05)
+
+.link__content:after
+	content: ""
+	display: block
+	width: 0
+	height: 1px
+	background-color: #00c8c8
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	transition: all .2s
+
+.link__content:hover:after
+	width: 100%
+
+.link__breadcrumbs
+	color: white
+	padding: 0
+	margin-right: 25px
+	margin-left: 15px
+	position: relative
+
+.link__breadcrumbs:after
+	content: ""
+	width: 10px
+	height: 2px
+	background-color: white
+	position: absolute
+	top: calc(50% - 1px)
+	right: -25px
+
+.link__breadcrumbs:before
+	content: ""
+	width: 0
+	height: 2px
+	background-color: #00c8c8
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	transition: all .2s
+
+.link__breadcrumbs:hover:before
+	width: 100%
+
+// ---Link end---
