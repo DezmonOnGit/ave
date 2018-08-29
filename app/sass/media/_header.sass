@@ -26,12 +26,14 @@
 	.menu
 		display: block
 		width: 100vw
-		height: 100vh
+		height: calc(100vh - 40px)
+		padding-top: 40px
 		position: fixed
 		left: 0
-		top: 38px
+		top: 0
 		background-color: rgba(0,0,0,.85)
 		overflow-y: scroll
+		z-index: 99
 		transform: scale(0)
 		transition: all .2s
 
@@ -119,12 +121,8 @@
 	.basket:after
 		right: 0
 
-	.menu
-		top: 130px
-
 	.menu-burger_active
-		position: absolute
+		position: fixed
 		top: 10px
-		right: auto
-		left: 10px
+		right: 20px
 

@@ -344,7 +344,7 @@ ul {
   top: calc(50% - 4px);
   right: 0;
   transform: rotate(-45deg);
-  z-index: 9; }
+  z-index: 1; }
 
 .currency-desription {
   font-family: "Montserrat-Regular", Arial, sans-serif;
@@ -365,7 +365,7 @@ ul {
   -moz-appearance: none;
   cursor: pointer;
   position: relative;
-  z-index: 99; }
+  z-index: 9; }
 
 .header__top-search {
   margin-right: auto; }
@@ -1145,12 +1145,14 @@ ul {
   .menu {
     display: block;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 40px);
+    padding-top: 40px;
     position: fixed;
     left: 0;
-    top: 38px;
+    top: 0;
     background-color: rgba(0, 0, 0, 0.85);
     overflow-y: scroll;
+    z-index: 99;
     transform: scale(0);
     transition: all .2s; }
   .menu-burger_active + .menu {
@@ -1214,13 +1216,10 @@ ul {
     padding: 15px 18px; }
   .basket:after {
     right: 0; }
-  .menu {
-    top: 130px; }
   .menu-burger_active {
-    position: absolute;
+    position: fixed;
     top: 10px;
-    right: auto;
-    left: 10px; } }
+    right: 20px; } }
 
 @media (max-width: 1170px) {
   .slider__women-collection-second {
@@ -1230,7 +1229,7 @@ ul {
   .slider {
     top: -74px; }
   .slider__item {
-    background-size: 150% 100%; } }
+    height: calc(100vh - 130px); } }
 
 @media (max-width: 1170px) {
   .goods__content {
