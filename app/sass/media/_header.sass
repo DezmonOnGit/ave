@@ -1,0 +1,130 @@
+@media (max-width: 1170px)
+	.logo
+		font-size: 20px
+
+	.menu-burger
+		display: block
+	
+	.menu-burger_active
+		height: 25px
+		z-index: 999
+
+	.menu-burger_active > .menu-burger__line-top
+		transform-origin: center right
+		transform: rotate(-45deg)
+
+	.menu-burger_active > .menu-burger__line-mid
+		width: 0
+
+	.menu-burger_active > .menu-burger__line-bot
+		transform-origin: center right
+		transform: rotate(45deg)
+
+	.menu-burger_active > .menu-burger__item
+		background-color: white
+
+	.menu
+		display: block
+		width: 100vw
+		height: 100vh
+		position: fixed
+		left: 0
+		top: 38px
+		background-color: rgba(0,0,0,.85)
+		overflow-y: scroll
+		transform: scale(0)
+		transition: all .2s
+
+	.menu-burger_active + .menu
+		transform: scale(1)		
+
+	.sub-menu
+		width: auto
+		height: auto
+		justify-content: space-around
+		box-sizing: border-box
+		transform: scale(0)
+		box-shadow: none
+		background-color: rgba(255,255,255,.05)
+
+	.menu__item:hover > .sub-menu
+		width: auto
+		position: static
+		transform: scale(1)
+		background-color: rgba(255,255,255,.09)
+
+
+	// .sub-menu_active
+	// 	position: static
+	// 	transform: scale(1)
+	// 	background-color: rgba(255,255,255,.09)
+
+	.sub-menu__item
+		width: auto
+		transform: scale(1)
+
+	.sub-menu__banner
+		transform: scale(1)	
+
+	.link
+		color: white
+		padding: 10px 14px
+		text-align: center
+
+	.link__menu
+		width: 200px
+		margin: 0 auto
+		font-size: 25px
+		position: relative
+
+	.link__arrow:after
+		bottom: auto
+		left: auto
+		top: 23px
+		right: 0
+
+	.link__item-list-title
+		color: white
+
+	.link__item-list
+		color: white
+
+	.sub-menu__mens
+		left: -15px
+
+	.sub-menu__womens
+		left: -100px
+
+@media (max-width: 750px)
+	.header__top-wrapper
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		flex-direction: column
+
+	.currency
+		padding: 10px 0px
+		margin-right: 0
+
+	.header__top-search
+		width: 100%
+		height: 30px
+
+	.search
+		width: 100%
+
+	.authorization__item
+		padding: 15px 18px
+
+	.basket:after
+		right: 0
+
+	.menu
+		top: 130px
+
+	.menu-burger_active
+		position: absolute
+		top: 10px
+		right: auto
+		left: 10px
+
