@@ -1111,14 +1111,16 @@ ul {
 
 @media (max-width: 1170px) {
   .container {
-    width: 750px; } }
+    width: 750px; }
+  .btn {
+    padding: 20px;
+    font-size: 12px; } }
 
 @media (max-width: 750px) {
   .container {
     width: 320px; }
   .btn {
-    padding: 20px;
-    font-size: 12px; } }
+    padding: 15px; } }
 
 @media (max-width: 320px) {
   .container {
@@ -1127,6 +1129,8 @@ ul {
 @media (max-width: 1170px) {
   .logo {
     font-size: 20px; }
+  .authorization__item {
+    padding: 10px 20px; }
   .menu-burger {
     display: block; }
   .menu-burger_active {
@@ -1196,7 +1200,9 @@ ul {
   .sub-menu__mens {
     left: -15px; }
   .sub-menu__womens {
-    left: -100px; } }
+    left: -100px; }
+  .basket:after {
+    right: 0; } }
 
 @media (max-width: 750px) {
   .header__top-wrapper {
@@ -1214,8 +1220,6 @@ ul {
     width: 100%; }
   .authorization__item {
     padding: 15px 18px; }
-  .basket:after {
-    right: 0; }
   .menu-burger_active {
     position: fixed;
     top: 10px;
@@ -1249,7 +1253,9 @@ ul {
 @media (max-width: 750px) {
   .goods-card__home_sm {
     width: 100%;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .info__btn-wrapper {
+    max-width: 120px; } }
 
 @media (max-width: 1170px) {
   .lookbook-wrapper {
@@ -1306,4 +1312,10 @@ ul {
     font-size: 16px; }
   .footer__sub-menu {
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .list-contact {
+    margin-top: 30px; }
+  .list-contact__title {
+    text-align: center; }
+  .list-contact__item {
+    text-align: center; } }
