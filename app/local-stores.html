@@ -36,9 +36,14 @@
 				<div class="header__bot-wrapper">
 					<a class="logo" href="index.html"><span class="logo_text-bold">avenue</span> fashion</a>
 					<nav class="nav">
+						<div class="menu-burger">
+							<span class="menu-burger__item menu-burger__line-top"></span>
+							<span class="menu-burger__item menu-burger__line-mid"></span>
+							<span class="menu-burger__item menu-burger__line-bot"></span>
+						</div>
 						<ul class="menu">
 							<li class="menu__item">
-								<a href="" class="link link__arrow">Mens</a>
+								<a href="" class="link link_no-link link__menu link__arrow">Mens</a>
 								<ul class="sub-menu sub-menu__mens">
 									<li class="sub-menu__item">
 										<ul class="sub-menu__item-list list-mens">
@@ -66,7 +71,7 @@
 								</ul>
 							</li>
 							<li class="menu__item">
-								<a href="" class="link link__arrow">Womens</a>
+								<a href="" class="link link_no-link link__menu link__arrow">Womens</a>
 								<ul class="sub-menu sub-menu__womens">
 									<li class="sub-menu__item">
 										<ul class="sub-menu__item-list list-mens">
@@ -93,10 +98,10 @@
 									</li>
 								</ul>
 							</li>
-							<li class="menu__item"><a class="link" href="brand.html">The brand</a></li>
-							<li class="menu__item"><a href="" class="link">Local stores</a></li>
+							<li class="menu__item"><a class="link link__menu" href="brand.html">The brand</a></li>
+							<li class="menu__item"><a class="link link__menu" href="">Local stores</a></li>
 							<li class="menu__item">
-								<a class="link link__arrow" href="lookbook.html">Look book</a>
+								<a class="link link_no-link link__menu link__arrow" href="lookbook.html">Look book</a>
 								<ul class="sub-menu sub-menu__look-book">
 									<li class="sub-menu__item">
 										<ul class="sub-menu__item-list list-mens">
@@ -144,19 +149,19 @@
 							<div class="content__title">London</div>
 							<div class="content__sub-title">180-182 Regent Street, London, W1B 5BT</div>
 							<div class="content__description description description__locations">Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</div>
-							<a href="" class="btn btn__locations">View details</a>
+							<a href="" class="btn btn__locations btn__locations_active" onclick="changeLocationDetails('london')">View details</a>
 						</div>
 						<div class="content__article locations__item">
 							<div class="content__title">New York</div>
 							<div class="content__sub-title">109 Columbus Circle, New York, NY 10023</div>
 							<div class="content__description description description__locations">Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.</div>
-							<a href="" class="btn btn__locations">View details</a>
+							<a href="" class="btn btn__locations" onclick="changeLocationDetails('new-york')">View details</a>
 						</div>
 						<div class="content__article locations__item">
 							<div class="content__title">Paris</div>
 							<div class="content__sub-title">2133 Rue Saint-Honoré, 75001 Paris</div>
 							<div class="content__description description description__locations">Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.</div>
-							<a href="" class="btn btn__locations">View details</a>
+							<a href="" class="btn btn__locations" onclick="changeLocationDetails('paris')">View details</a>
 						</div>
 					</div>
 				</div>

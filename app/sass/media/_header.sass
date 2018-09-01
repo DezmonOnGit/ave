@@ -54,15 +54,25 @@
 
 	.menu__item:hover > .sub-menu
 		width: auto
+		height: auto
+		transform: scale(0)
+
+	.sub-menu_active
+		width: auto
 		position: static
-		transform: scale(1)
-		background-color: rgba(255,255,255,.09)
+		transform: scale(1) !important
+		background-color: rgba(0,0,0,0.0)
 
-
-	// .sub-menu_active
+	// .menu__item:hover > .sub-menu
+	// 	width: auto
 	// 	position: static
 	// 	transform: scale(1)
-	// 	background-color: rgba(255,255,255,.09)
+	// 	background-color: rgba(0,0,0,0.0)
+	
+	// .menu__item:hover > .sub-menu .sub-menu__banner
+	// 	transform: scale(0)
+	// 	position: absolute
+
 
 	.sub-menu__item
 		width: auto

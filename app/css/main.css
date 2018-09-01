@@ -167,6 +167,12 @@ ul {
   width: 218px;
   text-align: center; }
 
+.btn__locations_active {
+  background-color: #00c8c8;
+  color: white;
+  border-color: #00c8c8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
 .link {
   display: block;
   padding: 10px 20px;
@@ -652,6 +658,9 @@ ul {
 .content__img {
   width: 100%; }
 
+.content__hand-designed-right {
+  display: none; }
+
 .content__article {
   font-family: "Montserrat-Regular", Arial, sans-serif; }
 
@@ -1120,7 +1129,9 @@ ul {
   .container {
     width: 320px; }
   .btn {
-    padding: 15px; } }
+    padding: 15px; }
+  .btn__locations {
+    margin: 0 auto; } }
 
 @media (max-width: 320px) {
   .container {
@@ -1171,9 +1182,13 @@ ul {
     background-color: rgba(255, 255, 255, 0.05); }
   .menu__item:hover > .sub-menu {
     width: auto;
+    height: auto;
+    transform: scale(0); }
+  .sub-menu_active {
+    width: auto;
     position: static;
-    transform: scale(1);
-    background-color: rgba(255, 255, 255, 0.09); }
+    transform: scale(1) !important;
+    background-color: rgba(0, 0, 0, 0); }
   .sub-menu__item {
     width: auto;
     transform: scale(1); }
@@ -1224,6 +1239,43 @@ ul {
     position: fixed;
     top: 10px;
     right: 20px; } }
+
+@media (max-width: 750px) {
+  .intro-description {
+    font-size: 25px; } }
+
+@media (max-width: 1170px) {
+  .location-details {
+    flex-direction: column;
+    max-height: none; }
+  .map {
+    width: 100%;
+    height: 300px; }
+  .address-details {
+    width: 100%;
+    box-sizing: border-box; } }
+
+@media (max-width: 750px) {
+  .content__brand {
+    justify-content: center;
+    flex-wrap: wrap; }
+  .content__item {
+    width: 100%; }
+  .content__hand-designed-left {
+    display: none; }
+  .content__hand-designed-right {
+    display: block; }
+  .content__article {
+    margin-bottom: 30px; }
+  .content__article_pad-t-65 {
+    padding-top: 0; }
+  .content-awards {
+    align-items: center;
+    justify-content: center; }
+  .locations {
+    flex-wrap: wrap; }
+  .locations__item {
+    width: 100%; } }
 
 @media (max-width: 1170px) {
   .slider__women-collection-second {

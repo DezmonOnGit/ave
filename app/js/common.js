@@ -39,16 +39,31 @@ $(document).ready(function(){
 
 	// Slider owl-carousel end
 
-	//Burger-menu begin
+	//Burger-menu event - click begin
 
 	$('.menu-burger').on('click', function() {
 		$(this).toggleClass('menu-burger_active');
 		$('body').toggleClass('hide-scroll');
 	});
-	
-	//Burger-menu begin
 
-	// $('.menu__item').on('click', function(event) {
-	// 	$('.sub-menu').toggleClass('sub-menu_active');
+	//Burger-menu event - click begin
+
+	//Menu-item event - click begin
+
+	$('.menu__item').on('click', function() {
+		$(this).children('.sub-menu').toggleClass('sub-menu_active');
+	});
+
+	// $('.menu__item:eq(0)').on('click', function() {
+	// 	$(this).children('.sub-menu').toggleClass('sub-menu_active');
 	// });
+	// $('.menu__item:eq(1)').on('click', function() {
+	// 	$(this).children('.sub-menu').toggleClass('sub-menu_active');
+	// });
+	// $('.menu__item:eq(4)').on('click', function() {
+	// 	$(this).children('.sub-menu').toggleClass('sub-menu_active');
+	// });
+
+	//Menu-item event - click end
+	
 });

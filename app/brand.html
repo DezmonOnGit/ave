@@ -36,9 +36,14 @@
 				<div class="header__bot-wrapper">
 					<a class="logo" href="index.html"><span class="logo_text-bold">avenue</span> fashion</a>
 					<nav class="nav">
+						<div class="menu-burger">
+							<span class="menu-burger__item menu-burger__line-top"></span>
+							<span class="menu-burger__item menu-burger__line-mid"></span>
+							<span class="menu-burger__item menu-burger__line-bot"></span>
+						</div>
 						<ul class="menu">
 							<li class="menu__item">
-								<a href="" class="link link__arrow">Mens</a>
+								<a href="" class="link link_no-link link__menu link__arrow">Mens</a>
 								<ul class="sub-menu sub-menu__mens">
 									<li class="sub-menu__item">
 										<ul class="sub-menu__item-list list-mens">
@@ -66,7 +71,7 @@
 								</ul>
 							</li>
 							<li class="menu__item">
-								<a href="" class="link link__arrow">Womens</a>
+								<a href="" class="link link_no-link link__menu link__arrow">Womens</a>
 								<ul class="sub-menu sub-menu__womens">
 									<li class="sub-menu__item">
 										<ul class="sub-menu__item-list list-mens">
@@ -93,10 +98,10 @@
 									</li>
 								</ul>
 							</li>
-							<li class="menu__item"><a href="" class="link">The brand</a></li>
-							<li class="menu__item"><a class="link" href="local-stores.html">Local stores</a></li>
+							<li class="menu__item"><a class="link link__menu" href="">The brand</a></li>
+							<li class="menu__item"><a class="link link__menu" link__menu href="local-stores.html">Local stores</a></li>
 							<li class="menu__item">
-								<a class="link link__arrow" href="lookbook.html">Look book</a>
+								<a class="link link_no-link link__menu link__arrow" href="lookbook.html">Look book</a>
 								<ul class="sub-menu sub-menu__look-book">
 									<li class="sub-menu__item">
 										<ul class="sub-menu__item-list list-mens">
@@ -140,7 +145,7 @@
 		<div class="container">
 			<div class="content content__brand">
 				<div class="content__item content-left">
-					<div class="content-left__item content__img content_mar-b-60">
+					<div class="content-left__item content__img content__hand-designed-left content_mar-b-60">
 						<img class="img img__content" src="img/content-left-img-1.jpg" alt="content image man">
 					</div>
 					<div class="content-left__item content__img content_mar-b-30">
@@ -153,6 +158,9 @@
 					</div>
 				</div>
 				<div class="content__item content-right">
+					<div class="content-right__item content__img content__hand-designed-right content_mar-b-30">
+						<img class="img img__content" src="img/content-left-img-1.jpg" alt="content image man">
+					</div>
 					<div class="content-right__item content__article content__article_pad-t-65 content_mar-b-60">
 						<div class="content__title">hand designed clothing</div>
 						<div class="content__sub-title">established in 2013, avenue fashion Sed dictum elit vel sapien luctus eras</div>
@@ -253,5 +261,8 @@
 		</div>
 	</footer>
 	<!-- Footer end -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 </html>
