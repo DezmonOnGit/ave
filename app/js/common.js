@@ -50,8 +50,8 @@ $(document).ready(function(){
 
 	//Menu-item event - click begin
 
-	$('.menu__item').on('click', function() {
-		$(this).children('.sub-menu').toggleClass('sub-menu_active');
+	$('.menu__item .arrow').on('click', function() {
+		$(this).siblings('.sub-menu').toggleClass('sub-menu_active');
 	});
 
 	// $('.menu__item:eq(0)').on('click', function() {

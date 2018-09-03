@@ -165,18 +165,37 @@
 	font-size: 13px
 	position: relative
 
-.menu__item:hover > .sub-menu
+.link__menu:hover + .sub-menu
 	width: 465px
 	height: auto
 	transform: scale(1)
 
-.menu__item:hover > .sub-menu .sub-menu__item
+.link__menu:hover + .sub-menu .sub-menu__item
 	transform: scale(1)
 	transition: all .8s
 
-.menu__item:hover > .sub-menu .sub-menu__banner
+.link__menu:hover + .sub-menu .sub-menu__banner
 	transform: scale(1)
 	transition: all .8s
+
+.link__menu:hover > .arrow
+	border-bottom: 2px solid #00c8c8
+	border-left: 2px solid #00c8c8	
+
+.arrow
+	display: block
+	width: 5px
+	height: 5px
+	border-bottom: 2px solid #989898
+	border-left: 2px solid #989898
+	position: absolute
+	bottom: 2px
+	left: 23px
+	transform: rotate(-45deg)
+
+// .arrow:hover
+// 	border-bottom: 2px solid #00c8c8
+// 	border-left: 2px solid #00c8c8
 
 .sub-menu
 	display: flex
