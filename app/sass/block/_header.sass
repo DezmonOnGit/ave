@@ -165,20 +165,20 @@
 	font-size: 13px
 	position: relative
 
-.link__menu:hover + .sub-menu
+.link__menu:hover ~ .sub-menu
 	width: 465px
 	height: auto
 	transform: scale(1)
 
-.link__menu:hover + .sub-menu .sub-menu__item
+.link__menu:hover ~ .sub-menu .sub-menu__item
 	transform: scale(1)
 	transition: all .8s
 
-.link__menu:hover + .sub-menu .sub-menu__banner
+.link__menu:hover ~ .sub-menu .sub-menu__banner
 	transform: scale(1)
 	transition: all .8s
 
-.link__menu:hover > .arrow
+.link__menu:hover + .arrow
 	border-bottom: 2px solid #00c8c8
 	border-left: 2px solid #00c8c8	
 
